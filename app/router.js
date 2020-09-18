@@ -5,5 +5,7 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/', controller.home.index);
+  router.get('/example', controller.home.index);
+  router.post('/media/upload', controller.media.index);
+  router.redirect('/*', '/example');
 };

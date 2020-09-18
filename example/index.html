@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta name="description" content="ffmpeg editor example">
+    <title>example</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+  </head>
+  <body>
+    <form method="post" action="/media/upload?_csrf=<%= ctx.csrf %>" enctype="multipart/form-data">
+      file: <input name="file" type="file">
+      <button type="submit">upload</button>
+    </form>
+  </body>
+</html>
