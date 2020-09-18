@@ -1,8 +1,6 @@
 'use strict';
 
 const Controller = require('egg').Controller;
-const os = require('os');
-const path = require('path');
 
 class MediaController extends Controller {
   async index() {
